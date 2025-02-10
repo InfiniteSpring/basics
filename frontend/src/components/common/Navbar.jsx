@@ -31,11 +31,12 @@ const Navbar = () => {
                 </Text>
                 <>
                     <HStack alignItems={"center"}>
-                        <Link to={"/create"}><Button bgColor={"gray.800"}>
-                            <FaRegSquarePlus color='white'></FaRegSquarePlus>
+                        <Link to={"/create"}><Button bgColor={useColorModeValue("gray.200", "gray.800")}>
+                            <FaRegSquarePlus color={useColorModeValue("black", "white")}></FaRegSquarePlus>
                         </Button></Link>
-                        <Button bgColor={"gray.800"} onClick={toggleColorMode}>
-                            {colorMode === "light" ? <FiMoon color='white'></FiMoon> : <FiSun color='white'></FiSun>}
+                        <Button bgColor={useColorModeValue("gray.200", "gray.800")} 
+                            onClick={toggleColorMode}>
+                            {colorMode === "light" ? <FiMoon color="black"></FiMoon> : <FiSun color='white'></FiSun>}
                         </Button>
                     </HStack>
                 </>

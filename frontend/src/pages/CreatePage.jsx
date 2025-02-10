@@ -17,6 +17,11 @@ const CreatePage = () => {
 
   const handleCreateProduct = async () => {
     const {success,message} = await createProduct(newProduct)
+    if(success){
+      setNewProduct({
+        name: "", price: "", image: ""
+      })
+    }
     toaster.create({
       title: success == true ? "Success" : "Error",
       description: message,

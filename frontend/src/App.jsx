@@ -2,7 +2,6 @@ import { Box } from "@chakra-ui/react"
 import { Route, Routes } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import CreatePage from "./pages/CreatePage"
-import UpdatePage from "./pages/UpdatePage"
 import Navbar from "./components/common/Navbar"
 import { useColorModeValue } from "./components/ui/color-mode"
 
